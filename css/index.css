@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* 
+不要轻易的去重置样式？
+
+ */
+body {
+  color: #808080;
+}
+
+/* 顶部工具栏 */
+.top_tool .row > div {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.top_tool .row > div a {
+  color: #808080;
+}
+
+.top_tool .row > div .btn-danger {
+  color: #fff;
+}
+
+.top_tool .row > div .phone_wrap {
+  position: relative;
+}
+
+.top_tool .row > div .phone_wrap:hover > img {
+  display: block;
+}
+
+.top_tool .row > div .phone_wrap > img {
+  position: absolute;
+  top: 21px;
+  left: -4px;
+  display: none;
+}
+
+.top_tool .row > div:nth-child(1) {
+  border-left: none;
+}
+
+/* 导航条 */
+#wjs_nav .navbar {
+  margin-bottom: 0;
+}
+
+#wjs_nav a {
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#wjs_nav a:hover,
+#wjs_nav a:focus {
+  border-bottom: 1px solid red;
+}
+
+#wjs_nav .navbar-brand span {
+  font-size: 70px;
+  top: 0;
+  line-height: inherit;
+}
+
+#wjs_nav .navbar-brand .wjsfont-logo {
+  color: red;
+}
+
+/* 轮播图 */
+.wjs_slides img {
+  width: 100%;
+}
+
+/* 交易 */
+.exchange {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.exchange .row > div {
+  margin-bottom: 20px;
+}
+
+.exchange a {
+  color: inherit;
+  display: block;
+}
+
+.exchange a:hover {
+  color: red;
+}
+
+.exchange a .media-left .wjsfont {
+  font-size: 40px;
+}
+
+.exchange a .media-body h4 {
+  font-size: 23px;
+}
+
+/* 正在排队 */
+.wjs_waitting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 29px 0;
+}
+
+.wjs_waitting .pull-left a {
+  border-bottom: 1px dashed currentColor;
+  color: red;
+}
+
+.wjs_waitting .pull-right a {
+  color: black;
+}
+
+.wjs_buy {
+  /* 默认卡片 灰色  cart_default */
+  /* 
+  页面布局 
+  1 容器元素  房子  块级元素 
+  2 页面的显示的元素  沙发 冰箱。。。   行内元素 
+   */
+  /* 红色 体验  */
+  /* 灰色 进度条 */
+}
+
+.wjs_buy .tab-pane {
+  padding: 10px 10px 20px;
+}
+
+.wjs_buy .cart_default {
+  display: block;
+  position: relative;
+  padding-right: 80px;
+  color: inherit;
+  -webkit-box-shadow: 0 0 16px 8px #ccc;
+          box-shadow: 0 0 16px 8px #ccc;
+  background-color: #f7f7f7;
+}
+
+.wjs_buy .cart_default .cart_main {
+  border-right: 1px dashed black;
+  padding: 0 10px;
+}
+
+.wjs_buy .cart_default .cart_main h4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.wjs_buy .cart_default .cart_main .cart_info .pull-left > div,
+.wjs_buy .cart_default .cart_main .cart_info .pull-right > div {
+  padding: 5px 0;
+}
+
+.wjs_buy .cart_default .cart_rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.wjs_buy .cart_default .cart_rate::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 4px 1px #ccc;
+          box-shadow: 0 3px 4px 1px #ccc;
+}
+
+.wjs_buy .cart_default .cart_rate::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  /* 水平偏移  垂直偏移 模糊值 外延值 颜色 内外阴影？ */
+  -webkit-box-shadow: 0 -3px 4px 1px #ccc;
+          box-shadow: 0 -3px 4px 1px #ccc;
+}
+
+.wjs_buy .cart_exp {
+  background-color: red;
+  color: #fff;
+}
+
+.wjs_buy .cart_exp .wjsfont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+
+.wjs_buy .cart_exp .cart_main {
+  border-color: #fff;
+}
+
+.wjs_buy .cart_progress .cart_main .cart_info > div {
+  width: 50%;
+}
+
+.wjs_buy .cart_progress .cart_rate .tips {
+  /* 
+        nth-child 和nth-of-type的区别？？？
+         */
+}
+
+.wjs_buy .cart_progress .cart_rate .tips span:nth-child(1) {
+  color: green;
+  border: 1px solid currentColor;
+}
+
+.wjs_buy .cart_progress .cart_rate .tips span:nth-of-type(2) {
+  color: red;
+  border: 1px solid currentColor;
+}
+
+/* 新闻模块 */
+.wjs_news {
+  /* 全部新闻 */
+  /* 新闻标题 */
+  /* 新闻内容 */
+}
+
+.wjs_news .news_name {
+  font-size: 30px;
+  color: black;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+
+.wjs_news .news_name::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  right: -10px;
+  bottom: -5px;
+}
+
+.wjs_news .news_title {
+  position: relative;
+}
+
+.wjs_news .news_title .line {
+  width: 0;
+  border-left: 1px dashed #000;
+  height: 400px;
+  position: absolute;
+  top: 4px;
+  left: 74px;
+  z-index: -1;
+}
+
+.wjs_news .news_title ul {
+  list-style: none;
+}
+
+.wjs_news .news_title ul li {
+  margin-bottom: 55px;
+}
+
+.wjs_news .news_title ul li a {
+  background-color: #cccccc;
+  display: inline-block;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.wjs_news .news_title ul li a:hover, .wjs_news .news_title ul li a:focus {
+  background-color: red;
+}
+
+.wjs_news .news_title ul li a span {
+  font-size: 50px;
+}
